@@ -1,0 +1,45 @@
+{
+  "name": "node-modules-licence-check",
+  "version": "1.0.0",
+  "description": "node-modules-licence-check is a simple tool to check the licence of your node modules.",
+  "contributors": [
+    {
+      "name": "TheKeineAhnung",
+      "email": "kontakt@keineahnung.eu"
+    }
+  ],
+  "author": "TheKeineAhnung",
+  "private": false,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "bin": {
+    "checkNodeModulesLicences": "./checkNodeModulesLicences.cjs"
+  },
+  "dependencies": {
+    "processenv": "3.0.9",
+    "shelljs": "0.8.5",
+    "ts-node": "10.7.0",
+    "yargs": "17.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.30",
+    "assertthat": "6.5.2",
+    "roboter": "13.1.0",
+    "typescript": "4.6.4"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "checkNodeModulesLicences": "node --loader=ts-node/esm --experimental-specifier-resolution=node --no-warnings lib/bin/nodeModulesLicenceCheck.ts",
+    "dev": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheKeineAhnung/css-documenation-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/TheKeineAhnung/css-documenation-generator/issues"
+  },
+  "homepage": "https://github.com/TheKeineAhnung/css-documenation-generator#readme",
+  "keywords": [],
+  "license": "CC-BY-3.0"
+}
