@@ -13,8 +13,6 @@ if (!fs.existsSync(args.p)) {
   process.exit(1);
 }
 
-const tsNodeDir = path.join(require.resolve('ts-node'), '..', '..');
-
 const absoluteEntryPath = path.join(
   __dirname,
   'build',
@@ -23,8 +21,10 @@ const absoluteEntryPath = path.join(
   'nodeModulesLicenceCheck.js'
 );
 
+const cmd = `node ${absoluteEntryPath} --experimental-specifier-resolution=node --no-warnings`;
+
 const result = shelljs.exec(
-  `node --loader='file://${tsNodeDir}/esm' --experimental-specifier-resolution=node --no-warnings '${absoluteEntryPath}' ${args.p}`,
+  cmd,
   // eslint-disable-next-line no-process-env
   { env: process.env, cwd: process.cwd(), silent: false }
 );
