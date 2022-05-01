@@ -1,6 +1,6 @@
 {
   "name": "node-modules-licence-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node-modules-licence-check is a simple tool to check the licence of your node modules.",
   "contributors": [
     {
