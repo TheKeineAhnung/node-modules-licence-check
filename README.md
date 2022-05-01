@@ -43,6 +43,12 @@ license: string;
 package: string;
 ```
 
+Or you can use it with npx:
+
+```shell
+npx node-modules-licence-check --p=absolute-path-to-your-node-modules-folder
+```
+
 ### Commands
 
 - `npm run dev`: Starts the TypeScript compiler in watch mode.
