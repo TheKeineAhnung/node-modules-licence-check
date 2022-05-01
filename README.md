@@ -46,7 +46,7 @@ package: string;
 Or you can use it with npx:
 
 ```shell
-npx node-modules-licence-check --p=absolute-path-to-your-node-modules-folder
+npx checkNodeModulesLicences --p=absolute-path-to-your-node-modules-folder
 ```
 
 ### Commands
