@@ -1,6 +1,6 @@
 {
   "name": "node-modules-licence-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node-modules-licence-check is a simple tool to check the licence of your node modules.",
   "contributors": [
     {
@@ -10,8 +10,8 @@
   ],
   "author": "TheKeineAhnung",
   "private": false,
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "main": "build/lib/nodeModulesLicenceCheck.js",
+  "types": "build/lib/nodeModulesLicenceCheck.d.ts",
   "bin": {
     "checkNodeModulesLicences": "./checkNodeModulesLicences.cjs"
   },
